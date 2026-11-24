@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O‘zbekiston "Adolat" SDP - Rasmiy Raqamli Portali</title>
+  
+  <!-- PWA Mobile App Meta Tags -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#B71C1C">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Adolat SDP">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Top Info Bar -->
+  <div class="bg-red-950 text-red-100 text-xs py-2 px-4 border-b border-red-900">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center"><i class="fas fa-balance-scale mr-1.5 text-red-400"></i> "Kuch — adolatda!"</span>
+        <span class="hidden md:inline text-red-400">|</span>
+        <span class="hidden md:inline"><i class="fas fa-headset mr-1.5 text-red-400"></i> Ishonch telefoni: <b>+998 (71) 233-12-88</b></span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center"><span class="live-indicator mr-1.5"></span> Raqamli qabulxona 24/7 onlayn</span>
+        <a href="https://t.me/AdolatSD_bot" target="_blank" class="bg-red-800 hover:bg-red-700 text-white px-2.5 py-0.5 rounded font-medium transition flex items-center">
+          <i class="fab fa-telegram mr-1.5 text-sm"></i> @AdolatSD_bot
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="bg-white sticky top-0 z-40 shadow-sm border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Logo & Title -->
+        <a href="/" class="flex items-center space-x-3 group">
+          <div class="w-12 h-12 bg-red-700 text-white rounded-xl flex items-center justify-center shadow-md group-hover:bg-red-800 transition">
+            <i class="fas fa-scale-balanced text-2xl"></i>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wider text-red-700 font-extrabold">O‘zbekiston</div>
+            <div class="text-xl font-black text-slate-900 leading-tight">"ADOLAT" SDP</div>
+            <div class="text-xs text-slate-500 font-medium">Sotsial-demokratik partiyasi</div>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+          <a href="/" class="text-red-700 hover:text-red-800 transition py-1 border-b-2 border-red-700">Bosh sahifa</a>
+          <a href="/murojaat.html" class="text-slate-600 hover:text-red-700 transition py-1">Fuqaro Murojaati</a>
+          <a href="/savol-javob.html" class="text-slate-600 hover:text-red-700 transition py-1 flex items-center">
+            <span>Shaffof Savol-Javob</span>
+            <span class="ml-1.5 bg-red-100 text-red-700 text-[10px] font-bold px-1.5 py-0.5 rounded-full">Q&A</span>
+          </a>
+          <a href="#ai-section" class="text-slate-600 hover:text-red-700 transition py-1 flex items-center">
+            <i class="fas fa-robot text-red-600 mr-1 text-xs"></i> AI Yurist
+          </a>
+          <a href="#news-section" class="text-slate-600 hover:text-red-700 transition py-1">Yangiliklar</a>
+        </nav>
+
+        <!-- Auth Section & Mobile App Install button -->
+        <div class="flex items-center space-x-3">
+          <button id="pwa-install-btn" class="hidden bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition shadow-sm items-center space-x-1">
+            <i class="fas fa-download"></i>
+            <span>Ilovani o‘rnatish</span>
+          </button>
+          <div id="nav-auth-section" class="flex items-center space-x-2"></div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="adolat-gradient text-white py-14 px-4 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+      <div class="lg:col-span-7 space-y-5">
+        <div class="inline-flex items-center bg-red-900/60 backdrop-blur-sm border border-red-400/30 text-red-100 text-xs px-3.5 py-1.5 rounded-full font-medium">
+          <i class="fas fa-digital-tachograph mr-2 text-red-300"></i> Partiyani to‘liq raqamlashtirish yagona portali
+        </div>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
+          Fuqaro manfaati va qonun ustuvorligi — adolat mezonidir
+        </h1>
+        <p class="text-red-100 text-sm sm:text-base leading-relaxed max-w-2xl">
+          Muammongiz, qonuniy shikoyat yoki taklifingiz bormi? Murojaatingizni to‘g‘ridan-to‘g‘ri onlayn yo‘llang yoki Telegram bot orqali bog‘laning. Har bir murojaat shaxsan partiya ma’muriyati nazoratida!
+        </p>
+
+        <div class="flex flex-wrap gap-3 pt-2">
+          <a href="/murojaat.html" class="bg-white text-red-700 hover:bg-red-50 font-bold px-5 py-3 rounded-xl shadow-lg transition flex items-center text-xs sm:text-sm">
+            <i class="fas fa-paper-plane mr-2 text-red-600"></i> Fuqaro murojaatini yo‘llash
+          </a>
+          <a href="/savol-javob.html" class="bg-red-900/60 hover:bg-red-900 text-white font-semibold px-5 py-3 rounded-xl border border-red-400/30 transition flex items-center text-xs sm:text-sm">
+            <i class="fas fa-gavel mr-2 text-yellow-400"></i> Huquqiy kodekslar Q&A
+          </a>
+          <a href="https://t.me/AdolatSD_bot" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-3 rounded-xl shadow transition flex items-center text-xs sm:text-sm">
+            <i class="fab fa-telegram mr-2 text-base"></i> Telegram Bot
+          </a>
+        </div>
+
+        <div class="pt-4 grid grid-cols-3 gap-3 border-t border-red-500/40 max-w-md text-xs">
+          <div>
+            <div class="text-2xl font-black">100%</div>
+            <div class="text-red-200">Shaffof muloqot</div>
+          </div>
+          <div>
+            <div class="text-2xl font-black">24/7</div>
+            <div class="text-red-200">Telegram & AI</div>
+          </div>
+          <div>
+            <div class="text-2xl font-black">0 so‘m</div>
+            <div class="text-red-200">Bepul yordam</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Card: Tezkor Yo'llanma -->
+      <div class="lg:col-span-5">
+        <div class="bg-white text-slate-800 rounded-2xl p-6 shadow-2xl border border-slate-100 space-y-4">
+          <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Raqamli Xizmatlar</span>
+            <span class="text-xs bg-red-100 text-red-700 font-bold px-2 py-0.5 rounded">AdolatSDP</span>
+          </div>
+
+          <div class="bg-slate-50 p-3.5 rounded-xl border border-slate-200 text-xs text-slate-700 leading-relaxed">
+            <b class="text-slate-900 block mb-1"><i class="fas fa-envelope-circle-check text-red-600 mr-1"></i> Fuqaro arizasi</b>
+            Siz qoldirgan ariza darhol partiya ma’murlariga va Telegram botga yetib boradi. Javob xati esa to‘g‘ridan-to‘g‘ri shaxsiy kabinetingizga va botga keladi.
+          </div>
+
+          <div class="bg-red-50 p-3.5 rounded-xl border border-red-100 text-xs text-slate-700 leading-relaxed">
+            <b class="text-red-800 block mb-1"><i class="fas fa-user-shield text-red-600 mr-1"></i> Shaxs maxfiyligi</b>
+            "Shaffof savol-javoblar" bo‘limida savol yo‘llaganingizda shaxsingiz <b>Fuqaro #ID</b> sifatida sir tutiladi. Savolingiz <b>qizil rangda</b>, partiya yuristlari javobi <b>yashil rangda</b> e’lon qilinadi.
+          </div>
+
+          <a href="/murojaat.html" class="w-full block text-center bg-red-700 hover:bg-red-800 text-white font-bold py-2.5 rounded-xl shadow transition text-xs">
+            Ariza qoldirishni boshlash <i class="fas fa-arrow-right ml-1"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ADOLAT YURIDIK AI SECTION -->
+  <section id="ai-section" class="py-12 bg-gradient-to-b from-slate-900 to-slate-950 text-white">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center space-y-2 mb-6">
+        <span class="bg-red-600 text-white text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+          Sun’iy Intellekt Texnologiyasi
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-black">Adolat Yuridik Sun’iy Intellekti (AI)</h2>
+        <p class="text-slate-300 text-xs sm:text-sm max-w-2xl mx-auto">
+          Mehnat, Oila, Fuqarolik, Jinoyat, Ma’muriy, Uy-joy yoki Soliq kodekslari bo‘yicha istalgan savolingizni yozing — AI qonun moddalari asosida to‘g‘ri va aniq huquqiy xulosani taqdim etadi!
+        </p>
+      </div>
+
+      <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700 shadow-xl space-y-3">
+        <div class="flex flex-col sm:flex-row gap-2">
+          <input type="text" id="home-ai-input" placeholder="Huquqiy savolingizni kiriting (masalan: Ishdan noqonuniy bo‘shatishganda nima qilish kerak?)..." class="flex-1 px-4 py-3 bg-slate-900 border border-slate-700 text-white text-xs sm:text-sm rounded-xl focus:outline-none focus:ring-2 focus:ring-red-600">
+          <button onclick="askHomeAI()" id="btn-home-ai" class="bg-red-700 hover:bg-red-800 text-white font-bold text-xs px-6 py-3 rounded-xl transition flex items-center justify-center shadow">
+            <i class="fas fa-robot mr-2 text-yellow-300"></i> AI Maslahat Olish
+          </button>
+        </div>
+
+        <div id="home-ai-box" class="hidden mt-3 p-4 rounded-xl bg-slate-900 border border-red-700/50 text-xs text-slate-200 space-y-2">
+          <div class="flex justify-between items-center text-red-400 font-bold border-b border-slate-800 pb-2">
+            <span><i class="fas fa-scale-balanced mr-1.5 text-yellow-400"></i> <span id="home-ai-code">Kodeks</span></span>
+            <button onclick="document.getElementById('home-ai-box').classList.add('hidden')" class="text-slate-400 hover:text-white">&times;</button>
+          </div>
+          <div id="home-ai-text" class="leading-relaxed whitespace-pre-line text-slate-100"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shaffof Savol-Javob Preview (BITTA QATORDA 5-6 TA KARD!) -->
+  <section class="py-12 bg-white border-y border-slate-200">
+    <div class="w-full max-w-[1700px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-6 gap-3">
+        <div>
+          <span class="text-xs font-bold text-red-700 uppercase tracking-widest">Shaffof Huquqiy Minbar</span>
+          <h3 class="text-xl sm:text-2xl font-black text-slate-900 mt-1">So‘nggi Savol-Javoblar (Kodekslar bo‘yicha)</h3>
+          <p class="text-xs text-slate-500 mt-0.5">Fuqaro savoli <span class="text-red-600 font-bold">qizil rangda</span>, partiya rasmiy yechimi <span class="text-emerald-700 font-bold">yashil rangda</span>.</p>
+        </div>
+        <a href="/savol-javob.html" class="bg-red-50 hover:bg-red-100 text-red-700 font-bold px-3 py-1.5 rounded-lg text-xs transition flex items-center">
+          Barcha savollarni ko‘rish &rarr;
+        </a>
+      </div>
+
+      <!-- Preview Cards Container: 5-6 cards in one row -->
+      <div id="home-questions-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-3.5">
+        <div class="col-span-full text-center text-slate-400 py-6">
+          <i class="fas fa-spinner fa-spin text-2xl"></i>
+          <p class="text-xs mt-2">Savollar yuklanmoqda...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News Section with Likes Alert to Admin -->
+  <section id="news-section" class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-8 gap-3">
+      <div>
+        <span class="text-xs font-bold text-red-700 uppercase tracking-widest">Partiya Hayoti</span>
+        <h3 class="text-2xl font-black text-slate-900 mt-1">So‘nggi Yangiliklar va Tashabbuslar</h3>
+        <p class="text-xs text-slate-500 mt-0.5">Like bosing — adminga xabar boradi.</p>
+      </div>
+    </div>
+
+    <div id="news-container" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="col-span-3 text-center text-slate-400 py-6">
+        <i class="fas fa-spinner fa-spin text-2xl"></i>
+        <p class="text-xs mt-2">Yangiliklar yuklanmoqda...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 text-xs py-8 border-t border-slate-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div class="flex items-center space-x-2">
+        <div class="w-6 h-6 bg-red-700 text-white rounded flex items-center justify-center font-bold text-xs">A</div>
+        <span>&copy; 2026 O‘zbekiston "Adolat" sotsial-demokratik partiyasi. Barcha huquqlar himoyalangan.</span>
+      </div>
+      <div class="flex space-x-4">
+        <a href="/murojaat.html" class="hover:text-white transition">Murojaat yo‘llash</a>
+        <a href="/savol-javob.html" class="hover:text-white transition">Q&A Huquq</a>
+        <a href="https://t.me/AdolatSD_bot" target="_blank" class="hover:text-white transition">Telegram Bot</a>
+        <a href="/admin.html" class="hover:text-red-400 transition">Admin Portal</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AUTH MODAL -->
+  <div id="auth-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden border border-slate-100">
+      <div class="bg-red-700 p-6 text-white relative">
+        <button onclick="closeAuthModal()" class="absolute top-5 right-5 text-white/80 hover:text-white text-xl">&times;</button>
+        <div class="text-xs uppercase tracking-wider text-red-200 font-bold mb-1">"Adolat" SDP Raqamli Tizimi</div>
+        <h3 class="text-2xl font-black">Xush kelibsiz!</h3>
+      </div>
+      <div class="flex border-b border-slate-200 text-sm font-bold">
+        <button id="tab-login" onclick="switchAuthTab('login')" class="flex-1 py-3 text-center border-b-2 border-red-600 text-red-600 transition">Kirish</button>
+        <button id="tab-register" onclick="switchAuthTab('register')" class="flex-1 py-3 text-center border-b-2 border-transparent text-slate-500 hover:text-slate-800 transition">Ro‘yxatdan o‘tish</button>
+      </div>
+      <div class="p-6">
+        <form id="login-form" onsubmit="handleLoginSubmit(event)" class="space-y-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Login:</label>
+            <input type="text" id="login-username" required class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-red-600 focus:outline-none" placeholder="alisher99">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Parol:</label>
+            <input type="password" id="login-password" required class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-red-600 focus:outline-none" placeholder="••••••••">
+          </div>
+          <button type="submit" class="w-full bg-red-700 hover:bg-red-800 text-white font-bold py-3 rounded-xl shadow transition text-sm">
+            Tizimga kirish
+          </button>
+        </form>
+
+        <form id="register-form" onsubmit="handleRegisterSubmit(event)" class="space-y-3.5 hidden">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Rolni tanlang:</label>
+            <select id="reg-role" onchange="toggleRoleFields()" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm font-semibold bg-white">
+              <option value="citizen">👤 Oddiy Fuqaro</option>
+              <option value="admin">🛡 Partiya Rasmiy Ma’muri (Admin)</option>
+            </select>
+          </div>
+          <div id="admin-code-container" class="hidden bg-amber-50 p-3 rounded-xl border border-amber-200">
+            <label class="block text-xs font-bold text-amber-900 mb-1">Rasmiy Adminlik Kodi:</label>
+            <input type="password" id="reg-admin-code" class="w-full px-3 py-2 border border-amber-300 rounded-lg text-sm" placeholder="Adminlik maxfiy kodi">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">To‘liq Ism, Familiyangiz:</label>
+            <input type="text" id="reg-fullname" required class="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Telefon raqamingiz:</label>
+            <input type="tel" id="reg-phone" class="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-sm" placeholder="+998 90 123 45 67">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Login:</label>
+            <input type="text" id="reg-username" required class="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-sm">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">Parol:</label>
+            <input type="password" id="reg-password" required class="w-full px-3.5 py-2 border border-slate-300 rounded-xl text-sm">
+          </div>
+          <button type="submit" class="w-full bg-red-700 hover:bg-red-800 text-white font-bold py-3 rounded-xl shadow transition text-sm">
+            Ro‘yxatdan o‘tish
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script>
+    // PWA Install Prompt
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      const installBtn = document.getElementById('pwa-install-btn');
+      if (installBtn) {
+        installBtn.classList.remove('hidden');
+        installBtn.classList.add('flex');
+        installBtn.onclick = async () => {
+          deferredPrompt.prompt();
+          const { outcome } = await deferredPrompt.userChoice;
+          if (outcome === 'accepted') {
+            installBtn.classList.add('hidden');
+          }
+          deferredPrompt = null;
+        };
+      }
+    });
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').catch(console.warn);
+    }
+
+    // Ask Home AI
+    async function askHomeAI() {
+      const input = document.getElementById('home-ai-input');
+      const text = input.value.trim();
+      if (!text) {
+        showToast('Savolingizni kiriting!', 'error');
+        return;
+      }
+      const btn = document.getElementById('btn-home-ai');
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Tahlil qilinmoqda...';
+
+      const res = await apiRequest('/ai/ask', 'POST', { questionText: text });
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fas fa-robot mr-2 text-yellow-300"></i> AI Maslahat Olish';
+
+      if (res.success) {
+        document.getElementById('home-ai-code').innerText = res.code || 'O‘zbekiston Qonunchiligi';
+        document.getElementById('home-ai-text').innerHTML = res.answer;
+        document.getElementById('home-ai-box').classList.remove('hidden');
+      } else {
+        showToast(res.message, 'error');
+      }
+    }
+
+    // Load Home Questions Preview (5-6 cards in row)
+    async function loadQuestionsPreview() {
+      const res = await apiRequest('/questions');
+      const container = document.getElementById('home-questions-container');
+      if (!res.success || !res.questions.length) {
+        container.innerHTML = '<div class="col-span-full text-center text-slate-500 py-6 text-xs">Hozircha savollar mavjud emas.</div>';
+        return;
+      }
+
+      container.innerHTML = res.questions.slice(0, 6).map(q => `
+        <div class="bg-white rounded-xl p-3.5 border border-slate-200 shadow-sm question-card flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <div class="flex justify-between items-center mb-2 pb-1.5 border-b border-slate-100">
+              <span class="bg-red-50 text-red-700 text-[10px] font-bold px-1.5 py-0.5 rounded truncate max-w-[110px]" title="${q.category}">
+                ${q.category}
+              </span>
+              <span class="text-[10px] text-slate-500 font-medium">
+                ${q.citizenLabel}
+              </span>
+            </div>
+
+            <!-- Qizil savol -->
+            <div class="mb-2.5">
+              <span class="text-[9px] uppercase tracking-wider font-extrabold text-red-700 block mb-0.5">Fuqaro savoli:</span>
+              <p class="question-text-highlight text-xs font-semibold bg-red-50/50 p-2 rounded-lg border border-red-100 line-clamp-3">
+                "${q.questionText}"
+              </p>
+            </div>
+
+            <!-- Yashil javob -->
+            ${q.answerText ? `
+              <div class="admin-answer-box p-2.5 rounded-lg text-xs space-y-1">
+                <div class="flex items-center text-[10px] font-bold text-emerald-900">
+                  <i class="fas fa-check-double mr-1 text-emerald-600"></i> Partiya Javobi:
+                </div>
+                <p class="admin-answer-text text-[11px] leading-relaxed line-clamp-4">
+                  ${q.answerText}
+                </p>
+              </div>
+            ` : `
+              <div class="bg-amber-50 text-amber-700 text-[10px] p-2 rounded-lg border border-amber-200">
+                ⏳ Ko‘rib chiqilmoqda...
+              </div>
+            `}
+          </div>
+
+          <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between items-center text-[10px] text-slate-400">
+            <span>${new Date(q.createdAt).toLocaleDateString('uz-UZ')}</span>
+            <a href="/savol-javob.html" class="text-red-700 hover:text-red-800 font-bold">O‘qish &rarr;</a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // Load News
+    async function loadNews() {
+      const res = await apiRequest('/news');
+      const container = document.getElementById('news-container');
+      if (!res.success || !res.news.length) {
+        container.innerHTML = '<div class="col-span-3 text-center text-slate-500 py-6">Yangiliklar mavjud emas.</div>';
+        return;
+      }
+
+      container.innerHTML = res.news.map(item => `
+        <article class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-md transition flex flex-col">
+          <div class="h-44 overflow-hidden relative">
+            <img src="${item.imageUrl}" alt="${item.title}" class="w-full h-full object-cover">
+            <span class="absolute top-3 left-3 bg-red-700 text-white text-[10px] font-bold px-2 py-0.5 rounded shadow">
+              ${item.category}
+            </span>
+          </div>
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[11px] text-slate-400 mb-1 font-medium">
+                ${item.date}
+              </div>
+              <h4 class="text-base font-bold text-slate-900 mb-2 leading-snug">
+                ${item.title}
+              </h4>
+              <p class="text-xs text-slate-600 line-clamp-3 leading-relaxed mb-4">
+                ${item.summary || item.content}
+              </p>
+            </div>
+
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+              <button onclick="handleLike('${item.id}', this)" class="like-btn flex items-center space-x-1.5 bg-red-50 hover:bg-red-100 text-red-700 px-3 py-1.5 rounded-lg text-xs font-bold transition">
+                <i class="fas fa-heart text-red-600"></i>
+                <span class="likes-count">${item.likesCount || 0}</span>
+                <span class="text-slate-500 font-normal">Like</span>
+              </button>
+              <button onclick="showNewsModal('${item.id}')" class="text-xs font-bold text-red-700 hover:text-red-900">
+                To‘liq o‘qish &rarr;
+              </button>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    async function handleLike(newsId, btn) {
+      const user = auth.getUser();
+      const body = {
+        userId: user ? user.id : null,
+        userName: user ? user.fullName : 'Sayt mehmoni'
+      };
+
+      const res = await apiRequest(`/news/${newsId}/like`, 'POST', body);
+      if (res.success) {
+        const countSpan = btn.querySelector('.likes-count');
+        if (countSpan) countSpan.textContent = res.likesCount;
+        showToast('Rahmat! Sizning ovozingiz adminga yetkazildi.', 'success');
+      }
+    }
+
+    async function showNewsModal(id) {
+      const res = await apiRequest('/news');
+      if (res.success) {
+        const item = res.news.find(n => String(n.id) === String(id));
+        if (item) alert(`${item.title}\n\n${item.content}`);
+      }
+    }
+
+    async function handleLoginSubmit(e) {
+      e.preventDefault();
+      const username = document.getElementById('login-username').value;
+      const password = document.getElementById('login-password').value;
+
+      const res = await apiRequest('/auth/login', 'POST', { username, password });
+      if (res.success) {
+        auth.setSession(res.token, res.user);
+        showToast(res.message, 'success');
+        closeAuthModal();
+        updateNavBar();
+        if (res.user.role === 'admin') {
+          setTimeout(() => window.location.href = '/admin.html', 800);
+        } else {
+          setTimeout(() => window.location.reload(), 600);
+        }
+      } else {
+        showToast(res.message, 'error');
+      }
+    }
+
+    async function handleRegisterSubmit(e) {
+      e.preventDefault();
+      const role = document.getElementById('reg-role').value;
+      const fullName = document.getElementById('reg-fullname').value;
+      const phone = document.getElementById('reg-phone').value;
+      const username = document.getElementById('reg-username').value;
+      const password = document.getElementById('reg-password').value;
+      const adminSecretCode = document.getElementById('reg-admin-code').value;
+
+      const payload = { role, fullName, phone, username, password };
+      if (role === 'admin') payload.adminSecretCode = adminSecretCode;
+
+      const res = await apiRequest('/auth/register', 'POST', payload);
+      if (res.success) {
+        auth.setSession(res.token, res.user);
+        showToast(res.message, 'success');
+        closeAuthModal();
+        updateNavBar();
+        if (res.user.role === 'admin') {
+          setTimeout(() => window.location.href = '/admin.html', 800);
+        } else {
+          setTimeout(() => window.location.reload(), 600);
+        }
+      } else {
+        showToast(res.message, 'error');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadQuestionsPreview();
+      loadNews();
+    });
+  </script>
+</body>
+</html>

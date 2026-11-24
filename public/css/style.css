@@ -1,0 +1,99 @@
+/* Adolat Sotsial-Demokratik Partiyasi - Asosiy Stillar */
+:root {
+  --adolat-red: #C62828;
+  --adolat-red-dark: #B71C1C;
+  --adolat-red-light: #FFEBEE;
+  --adolat-blue: #1565C0;
+  --adolat-blue-dark: #0D47A1;
+  --adolat-gold: #D4AF37;
+  --text-dark: #1E293B;
+  --text-muted: #64748B;
+  --bg-light: #F8FAFC;
+  --question-red: #D32F2F;
+  --answer-green: #1B5E20;
+  --answer-bg: #E8F5E9;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+}
+
+/* Q&A Shaffof Savol-Javob Stillari */
+.question-card {
+  transition: all 0.25s ease-in-out;
+  border-left: 5px solid var(--adolat-red);
+}
+
+.question-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+}
+
+/* Savol matni talab bo'yicha maxsus QIZIL rangda */
+.question-text-highlight {
+  color: #C62828 !important;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+/* Admin javobi talab bo'yicha maxsus YASHIL rangda */
+.admin-answer-box {
+  background-color: #E8F5E9;
+  border-left: 4px solid #2E7D32;
+  color: #1B5E20;
+}
+
+.admin-answer-text {
+  color: #1B5E20 !important;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* Header & Banner gradient */
+.adolat-gradient {
+  background: linear-gradient(135deg, #B71C1C 0%, #D32F2F 60%, #E53935 100%);
+}
+
+.adolat-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+}
+
+/* Pulse animatsiyasi jonli bildirishnomalar uchun */
+@keyframes pulse-dot {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(211, 47, 47, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0); }
+}
+
+.live-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+  animation: pulse-dot 2s infinite;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

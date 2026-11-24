@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaffof Savol-Javoblar (Kodekslar) - "Adolat" SDP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Top Info Bar -->
+  <div class="bg-red-950 text-red-100 text-xs py-2 px-4 border-b border-red-900">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center"><i class="fas fa-balance-scale mr-1.5 text-red-400"></i> "Kuch — adolatda!"</span>
+        <span class="hidden md:inline text-red-400">|</span>
+        <span class="hidden md:inline"><i class="fas fa-headset mr-1.5 text-red-400"></i> Ishonch telefoni: <b>+998 (71) 233-12-88</b></span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center"><span class="live-indicator mr-1.5"></span> Ochiq huquqiy kutubxona</span>
+        <a href="https://t.me/AdolatSD_bot" target="_blank" class="bg-red-800 hover:bg-red-700 text-white px-2.5 py-0.5 rounded font-medium transition flex items-center">
+          <i class="fab fa-telegram mr-1.5 text-sm"></i> @AdolatSD_bot
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white sticky top-0 z-40 shadow-sm border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="/" class="flex items-center space-x-3 group">
+          <div class="w-12 h-12 bg-red-700 text-white rounded-xl flex items-center justify-center shadow-md group-hover:bg-red-800 transition">
+            <i class="fas fa-scale-balanced text-2xl"></i>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wider text-red-700 font-extrabold">O‘zbekiston</div>
+            <div class="text-xl font-black text-slate-900 leading-tight">"ADOLAT" SDP</div>
+            <div class="text-xs text-slate-500 font-medium">Sotsial-demokratik partiyasi</div>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+          <a href="/" class="text-slate-600 hover:text-red-700 transition py-1">Bosh sahifa</a>
+          <a href="/murojaat.html" class="text-slate-600 hover:text-red-700 transition py-1">Fuqaro Murojaati</a>
+          <a href="/savol-javob.html" class="text-red-700 hover:text-red-800 transition py-1 border-b-2 border-red-700 flex items-center">
+            <span>Shaffof Savol-Javob</span>
+            <span class="ml-1.5 bg-red-100 text-red-700 text-[10px] font-bold px-1.5 py-0.5 rounded-full">Q&A</span>
+          </a>
+          <a href="/cabinet.html" class="text-slate-600 hover:text-red-700 transition py-1">Shaxsiy kabinet</a>
+        </nav>
+
+        <div id="nav-auth-section" class="flex items-center space-x-2"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Title & AI Section Banner -->
+  <div class="bg-slate-900 text-white py-8 px-4">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto space-y-2 mb-6">
+        <span class="bg-red-700 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+          Maxfiylik va Shaffoflik
+        </span>
+        <h1 class="text-2xl sm:text-3xl font-black">Shaffof Huquqiy Savol-Javoblar Portali</h1>
+        <p class="text-slate-300 text-xs sm:text-sm">
+          Fuqaroning shaxsi sir tutiladi. Yozilgan savol <b>qizil rangda</b>, partiya rasmiy javobi esa <b>yashil rangda</b> e’lon qilinadi.
+        </p>
+      </div>
+
+      <!-- ADOLAT YURIDIK AI INTERACTIVE CONSULTANT -->
+      <div class="bg-gradient-to-r from-red-950 via-slate-800 to-red-950 p-5 rounded-2xl border border-red-700/50 shadow-xl max-w-4xl mx-auto">
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="w-10 h-10 rounded-xl bg-red-700 text-white flex items-center justify-center text-xl shadow">
+            <i class="fas fa-robot text-yellow-300"></i>
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white flex items-center">
+              Adolat Yuridik Sun’iy Intellekti (AI Maslahatchi)
+              <span class="ml-2 bg-emerald-500 text-white text-[10px] px-2 py-0.2 rounded-full font-bold">24/7 Onlayn</span>
+            </h3>
+            <p class="text-xs text-slate-300">Har qanday huquqiy savolingizni bering — O‘zbekiston qonunlari va kodekslari asosida bir zumda to‘g‘ri javob oling!</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-2">
+          <input type="text" id="ai-query-input" placeholder="Masalan: Sababsiz ishdan bo‘shatishmoqchi, qanday huquqiy choralar ko‘rish mumkin?.." class="flex-1 px-4 py-2.5 bg-slate-900 border border-slate-700 text-white text-xs rounded-xl focus:outline-none focus:ring-2 focus:ring-red-600">
+          <button onclick="askAdolatAI()" id="btn-ask-ai" class="bg-red-700 hover:bg-red-800 text-white font-bold text-xs px-5 py-2.5 rounded-xl transition flex items-center justify-center shadow">
+            <i class="fas fa-wand-magic-sparkles mr-2 text-yellow-300"></i> AI dan so‘rash
+          </button>
+        </div>
+
+        <!-- AI Output Box -->
+        <div id="ai-result-box" class="hidden mt-4 p-4 rounded-xl bg-slate-900/90 border border-red-600/40 text-xs text-slate-200 space-y-2">
+          <div class="flex justify-between items-center text-red-400 font-bold border-b border-slate-700 pb-2">
+            <span><i class="fas fa-scale-balanced mr-1.5 text-yellow-400"></i> <span id="ai-result-code">Kodeks</span></span>
+            <button onclick="document.getElementById('ai-result-box').classList.add('hidden')" class="text-slate-400 hover:text-white">&times;</button>
+          </div>
+          <div id="ai-result-text" class="leading-relaxed whitespace-pre-line text-slate-100"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Content Container (5-6 kard bitta qatorda!) -->
+  <main class="w-full max-w-[1700px] mx-auto px-3 sm:px-4 lg:px-6 py-8 flex-1">
+    
+    <!-- Action Bar: Categories Filter & Ask Question Button -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-3 mb-6 bg-white p-3.5 rounded-2xl border border-slate-200 shadow-sm">
+      
+      <!-- Kodekslar bo'yicha filter -->
+      <div class="flex items-center space-x-1.5 overflow-x-auto w-full md:w-auto pb-2 md:pb-0 text-xs">
+        <span class="font-bold text-slate-500 whitespace-nowrap mr-1"><i class="fas fa-filter text-red-600"></i> Kodekslar:</span>
+        <button onclick="filterQuestions('all', this)" class="category-filter-btn bg-red-700 text-white font-semibold px-2.5 py-1 rounded-lg whitespace-nowrap transition">
+          Barchasi
+        </button>
+        <button onclick="filterQuestions('Mehnat kodeksi', this)" class="category-filter-btn bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1 rounded-lg whitespace-nowrap transition">
+          Mehnat kodeksi
+        </button>
+        <button onclick="filterQuestions('Fuqarolik kodeksi', this)" class="category-filter-btn bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1 rounded-lg whitespace-nowrap transition">
+          Fuqarolik kodeksi
+        </button>
+        <button onclick="filterQuestions('Oila kodeksi', this)" class="category-filter-btn bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1 rounded-lg whitespace-nowrap transition">
+          Oila kodeksi
+        </button>
+        <button onclick="filterQuestions('Jinoyat kodeksi', this)" class="category-filter-btn bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1 rounded-lg whitespace-nowrap transition">
+          Jinoyat kodeksi
+        </button>
+        <button onclick="filterQuestions('Ma’muriy javobgarlik', this)" class="category-filter-btn bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1 rounded-lg whitespace-nowrap transition">
+          Ma’muriy
+        </button>
+        <button onclick="filterQuestions('Uy-joy qonunchiligi', this)" class="category-filter-btn bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold px-2.5 py-1 rounded-lg whitespace-nowrap transition">
+          Uy-joy
+        </button>
+      </div>
+
+      <!-- Savol berish tugmasi -->
+      <button onclick="openAskQuestionModal()" class="w-full md:w-auto bg-red-700 hover:bg-red-800 text-white text-xs font-bold px-4 py-2 rounded-xl shadow transition flex items-center justify-center whitespace-nowrap">
+        <i class="fas fa-plus-circle mr-1.5"></i> Yangi Savol Berish
+      </button>
+
+    </div>
+
+    <!-- Questions Grid: Bitta qatorda 5-6 ta kard sig'adigan zamonaviy tartib! -->
+    <div id="questions-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-3.5">
+      <div class="col-span-full text-center py-12 text-slate-400">
+        <i class="fas fa-spinner fa-spin text-3xl"></i>
+        <p class="mt-2 text-xs">Savol-javoblar yuklanmoqda...</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ASK QUESTION MODAL -->
+  <div id="ask-modal" class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden border border-slate-100">
+      <div class="bg-red-700 p-5 text-white flex justify-between items-center">
+        <div>
+          <h3 class="text-base font-black">Huquqiy Savol Yo‘llash</h3>
+          <p class="text-xs text-red-100 mt-0.5">Savol bering, shaxsingiz "Fuqaro #ID" sifatida sir saqlanadi.</p>
+        </div>
+        <button onclick="closeAskQuestionModal()" class="text-white/80 hover:text-white text-xl">&times;</button>
+      </div>
+
+      <form onsubmit="submitQuestion(event)" class="p-5 space-y-3.5">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">Kodeks yoki sohani tanlang:</label>
+          <select id="modal-q-category" required class="w-full px-3 py-2 border border-slate-300 rounded-xl text-xs font-semibold focus:ring-2 focus:ring-red-600 focus:outline-none bg-white">
+            <option value="Mehnat kodeksi">⚖️ Mehnat kodeksi</option>
+            <option value="Fuqarolik kodeksi">📜 Fuqarolik kodeksi</option>
+            <option value="Oila kodeksi">👨‍👩‍👧 Oila kodeksi</option>
+            <option value="Jinoyat kodeksi">⚖️ Jinoyat kodeksi</option>
+            <option value="Ma’muriy javobgarlik">🚔 Ma’muriy javobgarlik</option>
+            <option value="Uy-joy qonunchiligi">🏠 Uy-joy qonunchiligi</option>
+            <option value="Soliq va Tadbirkorlik">💼 Soliq va tadbirkorlik</option>
+            <option value="Boshqa huquqiy soha">📌 Boshqa soha</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">
+            Savol matni (Saytda <span class="text-red-600 font-bold">qizil rangda</span> ko‘rinadi):
+          </label>
+          <textarea id="modal-q-text" rows="4" required placeholder="Savolingizni aniq bayon qiling..." class="w-full px-3 py-2 border border-slate-300 rounded-xl text-xs focus:ring-2 focus:ring-red-600 focus:outline-none"></textarea>
+        </div>
+
+        <div class="bg-red-50 p-2.5 rounded-xl border border-red-100 text-[11px] text-red-900 flex items-center space-x-2">
+          <i class="fas fa-user-shield text-red-600 text-sm"></i>
+          <div><b>Kafolat:</b> Sizning ism-sharifingiz va kontaktlaringiz oshkor etilmaydi.</div>
+        </div>
+
+        <button type="submit" id="modal-q-submit" class="w-full bg-red-700 hover:bg-red-800 text-white font-bold py-2.5 rounded-xl shadow transition text-xs">
+          <i class="fas fa-paper-plane mr-1.5"></i> Savolni yuborish
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="bg-slate-950 text-slate-400 text-xs py-6 border-t border-slate-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      &copy; 2026 O‘zbekiston "Adolat" sotsial-demokratik partiyasi. Barcha savol-javoblar qonun hujjatlariga asoslangan.
+    </div>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script>
+    let currentCategory = 'all';
+
+    async function loadQuestions(category = 'all') {
+      const endpoint = category === 'all' ? '/questions' : `/questions?category=${encodeURIComponent(category)}`;
+      const res = await apiRequest(endpoint);
+      const container = document.getElementById('questions-grid');
+
+      if (!res.success || !res.questions.length) {
+        container.innerHTML = `
+          <div class="col-span-full bg-white rounded-2xl p-8 text-center border border-slate-200">
+            <i class="fas fa-folder-open text-3xl text-slate-300 mb-2"></i>
+            <h4 class="text-sm font-bold text-slate-700">Ushbu sohada hozircha savollar mavjud emas</h4>
+          </div>
+        `;
+        return;
+      }
+
+      // Render 5-6 cards per row cleanly
+      container.innerHTML = res.questions.map(q => `
+        <div class="bg-white rounded-xl p-3.5 border border-slate-200 shadow-sm question-card flex flex-col justify-between hover:shadow-md transition">
+          <div>
+            <!-- Header: Category & Citizen Anonymous Label -->
+            <div class="flex items-center justify-between mb-2 pb-1.5 border-b border-slate-100">
+              <span class="bg-red-50 text-red-700 border border-red-200 text-[10px] font-bold px-1.5 py-0.5 rounded truncate max-w-[120px]" title="${q.category}">
+                ${q.category}
+              </span>
+              <span class="text-[10px] bg-slate-100 text-slate-600 font-semibold px-1.5 py-0.5 rounded-full" title="Shaxs sir tutilgan">
+                <i class="fas fa-user-secret text-slate-400 mr-0.5"></i> ${q.citizenLabel || 'Fuqaro'}
+              </span>
+            </div>
+
+            <!-- QIZIL RANGDA SAVOL MATNI -->
+            <div class="mb-3">
+              <span class="text-[9px] uppercase tracking-wider font-extrabold text-red-700 block mb-0.5">
+                Fuqaro savoli:
+              </span>
+              <p class="question-text-highlight text-xs font-semibold bg-red-50/50 p-2 rounded-lg border border-red-100 line-clamp-4 hover:line-clamp-none transition" title="${q.questionText}">
+                "${q.questionText}"
+              </p>
+            </div>
+
+            <!-- YASHIL RANGDA PARTIYA RASMIY JAVOBI -->
+            ${q.status === 'answered' && q.answerText ? `
+              <div class="admin-answer-box p-2.5 rounded-lg shadow-xs text-xs space-y-1">
+                <div class="flex items-center text-[10px] font-bold text-emerald-900">
+                  <i class="fas fa-shield-check mr-1 text-emerald-600"></i> Partiya Rasmiy Javobi:
+                </div>
+                <div class="admin-answer-text text-[11px] leading-relaxed line-clamp-6 hover:line-clamp-none transition">
+                  ${q.answerText}
+                </div>
+              </div>
+            ` : `
+              <div class="bg-amber-50 text-amber-800 text-[10px] p-2 rounded-lg border border-amber-200 flex items-center space-x-1.5">
+                <i class="fas fa-hourglass-half text-amber-500 animate-spin"></i>
+                <span>Partiya yuristlari tomonidan ko‘rib chiqilmoqda...</span>
+              </div>
+            `}
+          </div>
+
+          <div class="mt-3 pt-2 border-t border-slate-100 flex justify-between items-center text-[10px] text-slate-400">
+            <span>${new Date(q.createdAt).toLocaleDateString('uz-UZ')}</span>
+            <span class="text-emerald-700 font-bold">${q.status === 'answered' ? 'Javob berilgan ✅' : 'Kutilmoqda'}</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterQuestions(category, btn) {
+      currentCategory = category;
+      document.querySelectorAll('.category-filter-btn').forEach(b => {
+        b.classList.remove('bg-red-700', 'text-white');
+        b.classList.add('bg-slate-100', 'text-slate-700');
+      });
+      btn.classList.add('bg-red-700', 'text-white');
+      btn.classList.remove('bg-slate-100', 'text-slate-700');
+      loadQuestions(category);
+    }
+
+    // Ask Adolat AI
+    async function askAdolatAI() {
+      const input = document.getElementById('ai-query-input');
+      const text = input.value.trim();
+      if (!text) {
+        showToast('Savolingizni yozing!', 'error');
+        return;
+      }
+
+      const btn = document.getElementById('btn-ask-ai');
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Tahlil qilinmoqda...';
+
+      const res = await apiRequest('/ai/ask', 'POST', { questionText: text });
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fas fa-wand-magic-sparkles mr-2 text-yellow-300"></i> AI dan so‘rash';
+
+      if (res.success) {
+        document.getElementById('ai-result-code').innerText = res.code || 'O‘zbekiston Qonunchiligi';
+        document.getElementById('ai-result-text').innerHTML = res.answer;
+        document.getElementById('ai-result-box').classList.remove('hidden');
+      } else {
+        showToast(res.message, 'error');
+      }
+    }
+
+    function openAskQuestionModal() {
+      if (!auth.isLoggedIn()) {
+        showToast('Savol berish uchun avval tizimga kiring yoki ro‘yxatdan o‘ting!', 'info');
+        openAuthModal('register');
+        return;
+      }
+      document.getElementById('ask-modal').classList.remove('hidden');
+    }
+
+    function closeAskQuestionModal() {
+      document.getElementById('ask-modal').classList.add('hidden');
+    }
+
+    async function submitQuestion(e) {
+      e.preventDefault();
+      const category = document.getElementById('modal-q-category').value;
+      const questionText = document.getElementById('modal-q-text').value;
+
+      const btn = document.getElementById('modal-q-submit');
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Yuborilmoqda...';
+
+      const res = await apiRequest('/questions', 'POST', { category, questionText });
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fas fa-paper-plane mr-1.5"></i> Savolni yuborish';
+
+      if (res.success) {
+        showToast(res.message, 'success');
+        closeAskQuestionModal();
+        document.getElementById('modal-q-text').value = '';
+        loadQuestions(currentCategory);
+      } else {
+        showToast(res.message, 'error');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadQuestions();
+    });
+  </script>
+</body>
+</html>

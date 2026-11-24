@@ -1,0 +1,61 @@
+[
+  {
+    "userId": "mwv2snuy6j4rc",
+    "category": "Mehnat kodeksi",
+    "citizenLabel": "Fuqaro #3724",
+    "questionText": "men ayol kishiman va meni sababsiz ishtan boshatishmoqchi",
+    "status": "answered",
+    "answerText": "O‘zbekiston Respublikasining yangi tahrirdagi Mehnat kodeksiga muvofiq quyidagi huquqiy kafolatlar belgilangan:\n\n1. <b>Sababsiz ishdan bo‘shatish qat’iyan taqiqlanadi:</b> Mehnat kodeksining 161-moddasiga asosan, ish beruvchi xodim bilan mehnat shartnomasini faqatgina qonunda qat’iy ko‘rsatilgan asoslar (korxona tugatilishi, shtat qisqarishi, xodimning malakasi yetarli emasligi yoki mehnat majburiyatlarini muntazam buzganligi) bo‘yichagina bekor qilishi mumkin.\n2. <b>Ayollar va onalarni himoya qilish:</b> Mehnat kodeksining 408-moddasiga ko‘ra, homilador ayollar va 3 yoshgacha bolasi bor ayollar bilan mehnat shartnomasini ish beruvchining tashabbusi bilan bekor qilishga mutlaqo yo‘l qo‘yilmaydi (korxona butunlay tugatilgan hollar bundan mustasno).\n3. <b>Amaliy yechim va choralar:</b> Agar sizni noqonuniy ravishda ishdan bo‘shatishmoqchi bo‘lishsa, o‘z xohishingiz bilan ariza yozmang! Zudlik bilan Kambag‘allikni qisqartirish va bandlik vazirligi Davlat mehnat inspeksiyasiga hamda \"Adolat\" SDP yuridik qabulxonasiga murojaat qiling. Noqonuniy bo‘shatilgan taqdirda sud orqali ishga tiklanasiz va barcha majburiy progul kunlari uchun o‘rtacha oylik ish haqingiz undirib beriladi.",
+    "answeredBy": "Nurullayeva Nurangiz",
+    "answeredAt": "2026-11-24T19:35:51.189Z",
+    "id": "mwv2uuloa4kus",
+    "createdAt": "2026-11-24T19:18:14.892Z",
+    "updatedAt": "2026-11-24T19:35:51.189Z"
+  },
+  {
+    "userId": "mwv2ptv10zd2u",
+    "category": "Mehnat kodeksi",
+    "citizenLabel": "Fuqaro #6117",
+    "questionText": "Mehnat ta’tili davrida xodimni ishga chaqirib olishga ruxsat beriladimi?",
+    "status": "answered",
+    "answerText": "O‘zbekiston Respublikasi Mehnat kodeksining 230-moddasiga asosan, xodimni yillik mehnat ta’tilidan chaqirib olishga faqat uning yozma roziligi bilangina yo‘l qo‘yiladi.",
+    "answeredBy": "Partiya Yuristi Rustamov",
+    "answeredAt": "2026-11-24T19:14:20.912Z",
+    "id": "mwv2pu1t3pqht",
+    "createdAt": "2026-11-24T19:14:20.897Z",
+    "updatedAt": "2026-11-24T19:14:20.912Z"
+  },
+  {
+    "id": "q-1",
+    "category": "Mehnat kodeksi",
+    "citizenLabel": "Fuqaro #1042",
+    "questionText": "Ish beruvchi sinov muddatida ish haqini to‘liq to‘lamaslikka yoki 50% to‘lashga haqlimi?",
+    "status": "answered",
+    "answerText": "Yo‘q, mutlaqo haqli emas! O‘zbekiston Respublikasi Mehnat kodeksining 131-moddasiga binoan, dastlabki sinov davrida xodimga qonunchilikda va mehnat shartnomasida belgilangan barcha mehnat huquqlari to‘liq tatbiq etiladi hamda ish haqi to‘liq hajmda to‘lanishi shart.",
+    "answeredBy": "Partiya bosh huquqshunosi (Admin)",
+    "answeredAt": "2026-11-23T14:20:00.000Z",
+    "createdAt": "2026-11-23T10:15:00.000Z"
+  },
+  {
+    "id": "q-2",
+    "category": "Fuqarolik kodeksi",
+    "citizenLabel": "Fuqaro #1089",
+    "questionText": "Qo‘shnim ruxsatsiz umumiy yo‘lga to‘siq qurib oldi, buni bartaraf etish uchun qanday huquqiy choralar ko‘rish mumkin?",
+    "status": "answered",
+    "answerText": "Fuqarolik kodeksining 164 va 188-moddalariga muvofiq, mulkdor o‘z huquqlarining har qanday buzilishini bartaraf etishni talab qilishi mumkin. Siz dastlab mahalla fuqarolar yig‘iniga va tuman hokimligining yer nazorati bo‘limiga murojaat qilasiz, agar bartaraf etilmasa sudga nizo bo‘yicha da’vo arizasi kiritiladi.",
+    "answeredBy": "Adolat SDP Yuridik Markazi (Admin)",
+    "answeredAt": "2026-11-24T09:10:00.000Z",
+    "createdAt": "2026-11-24T08:00:00.000Z"
+  },
+  {
+    "id": "q-3",
+    "category": "Oila kodeksi",
+    "citizenLabel": "Fuqaro #1105",
+    "questionText": "Aliment to‘lashdan qasddan bo‘yin tovlagan shaxslarga nisbatan qanday javobgarlik choralari ko‘riladi?",
+    "status": "answered",
+    "answerText": "O‘zbekiston Respublikasi Ma’muriy javobgarlik to‘g‘risidagi kodeksning 47-4-moddasiga asosan 15 sutkagacha ma’muriy qamoq, shuningdek O‘zbekiston Respublikasidan chetga chiqish huquqini vaqtincha cheklash qo‘llaniladi. Moddiy ta’minlashdan muntazam bo‘yin tovlash esa Jinoyat kodeksining 122-moddasiga ko‘ra jinoiy javobgarlikka sabab bo‘ladi.",
+    "answeredBy": "Partiya yuristi (Admin)",
+    "answeredAt": "2026-11-24T16:45:00.000Z",
+    "createdAt": "2026-11-24T12:30:00.000Z"
+  }
+]

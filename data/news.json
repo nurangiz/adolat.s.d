@@ -1,0 +1,41 @@
+[
+  {
+    "id": "news-1",
+    "title": "Adolat SDP: Jamiyatda qonun ustuvorligi va ijtimoiy adolat bosh mezondir",
+    "category": "Huquq va Qonunchilik",
+    "summary": "Partiya fuqarolarning huquqiy manfaatlarini himoya qilish, qonun ustuvorligini ta’minlash hamda ijtimoiy adolat prinsiplarini qaror toptirish borasidagi tashabbuslarni ilgari surmoqda.",
+    "content": "O‘zbekiston \"Adolat\" sotsial-demokratik partiyasi mamlakatimizda adolatli jamiyat barpo etish, qonun ustuvorligini ta’minlash va inson sha’ni hamda qadr-qimmatini yuksaltirish yo‘lida qator islohotlarni amalga oshirmoqda. Yangi raqamli platforma fuqarolar va partiya o‘rtasida to‘g‘ridan-to‘g‘ri shaffof ko‘prik vazifasini bajaradi.",
+    "imageUrl": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=80",
+    "date": "2026-11-20",
+    "likesCount": 15,
+    "likedUsers": [
+      "mwv2ptv10zd2u"
+    ],
+    "createdAt": "2026-11-24T19:11:21.889Z",
+    "updatedAt": "2026-11-24T19:14:20.927Z"
+  },
+  {
+    "id": "news-2",
+    "title": "Mehnat kodeksida xodimlar huquqlarining kafolatlari kuchaytirildi",
+    "category": "Mehnat Kodeksi",
+    "summary": "Mehnat munosabatlarida adolat va qonuniylikni ta’minlash yuzasidan yangi qonun loyihalari ishlab chiqildi.",
+    "content": "Partiyamiz fraksiyasi tomonidan mehnatkashlarning mehnat sharoitlarini yaxshilash, ortiqcha ish soatlariga haq to‘lash va asossiz ishdan bo‘shatish holatlariga barham berish borasida aniq huquqiy mexanizmlar taklif etildi.",
+    "imageUrl": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
+    "date": "2026-11-22",
+    "likesCount": 28,
+    "likedUsers": [],
+    "createdAt": "2026-11-24T19:11:21.890Z"
+  },
+  {
+    "id": "news-3",
+    "title": "Aholiga bepul huquqiy yordam ko‘rsatish bo‘yicha \"Adolat qabulxonasi\" dasturi kengaytirilmoqda",
+    "category": "Ijtimoiy himoya",
+    "summary": "Raqamli platforma va bot orqali har bir fuqaro o‘zini qiynayotgan masalalar bo‘yicha partiya yuristlaridan to‘g‘ridan-to‘g‘ri bepul javob oladi.",
+    "content": "Endilikda har bir fuqaro partiyaning hududiy kengashlariga kelib o‘tirmasdan, onlayn tarzda murojaat qoldirishi yoki huquqiy kodekslar bo‘yicha shaffof savol-javoblar tizimidan foydalanishi mumkin.",
+    "imageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+    "date": "2026-11-24",
+    "likesCount": 42,
+    "likedUsers": [],
+    "createdAt": "2026-11-24T19:11:21.890Z"
+  }
+]

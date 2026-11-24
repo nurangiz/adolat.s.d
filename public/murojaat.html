@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuqaro Murojaati Yo‘llash - "Adolat" SDP Raqamli Qabulxonasi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+  <!-- Top Info Bar -->
+  <div class="bg-red-950 text-red-100 text-xs py-2 px-4 border-b border-red-900">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center"><i class="fas fa-balance-scale mr-1.5 text-red-400"></i> "Kuch — adolatda!"</span>
+        <span class="hidden md:inline text-red-400">|</span>
+        <span class="hidden md:inline"><i class="fas fa-headset mr-1.5 text-red-400"></i> Ishonch telefoni: <b>+998 (71) 233-12-88</b></span>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center"><span class="live-indicator mr-1.5"></span> Qabulxona 24/7 onlayn</span>
+        <a href="https://t.me/AdolatSD_bot" target="_blank" class="bg-red-800 hover:bg-red-700 text-white px-2.5 py-0.5 rounded font-medium transition flex items-center">
+          <i class="fab fa-telegram mr-1.5 text-sm"></i> @AdolatSD_bot
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-white sticky top-0 z-40 shadow-sm border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <a href="/" class="flex items-center space-x-3 group">
+          <div class="w-12 h-12 bg-red-700 text-white rounded-xl flex items-center justify-center shadow-md group-hover:bg-red-800 transition">
+            <i class="fas fa-scale-balanced text-2xl"></i>
+          </div>
+          <div>
+            <div class="text-xs uppercase tracking-wider text-red-700 font-extrabold">O‘zbekiston</div>
+            <div class="text-xl font-black text-slate-900 leading-tight">"ADOLAT" SDP</div>
+            <div class="text-xs text-slate-500 font-medium">Sotsial-demokratik partiyasi</div>
+          </div>
+        </a>
+
+        <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+          <a href="/" class="text-slate-600 hover:text-red-700 transition py-1">Bosh sahifa</a>
+          <a href="/murojaat.html" class="text-red-700 hover:text-red-800 transition py-1 border-b-2 border-red-700">Fuqaro Murojaati</a>
+          <a href="/savol-javob.html" class="text-slate-600 hover:text-red-700 transition py-1 flex items-center">
+            <span>Shaffof Savol-Javob</span>
+            <span class="ml-1.5 bg-red-100 text-red-700 text-[10px] font-bold px-1.5 py-0.5 rounded-full">Q&A</span>
+          </a>
+          <a href="/cabinet.html" class="text-slate-600 hover:text-red-700 transition py-1">Shaxsiy kabinet</a>
+        </nav>
+
+        <div id="nav-auth-section" class="flex items-center space-x-2"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <div class="bg-red-800 text-white py-10 px-4">
+    <div class="max-w-4xl mx-auto text-center space-y-3">
+      <div class="inline-flex items-center bg-red-950/60 text-xs px-3 py-1 rounded-full text-red-200">
+        <i class="fas fa-landmark mr-1.5"></i> Partiya Markaziy Devoni Raqamli Qabulxonasi
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-black">Partiyaga Rasmiy Murojaat Yo‘llash</h1>
+      <p class="text-red-100 text-sm max-w-2xl mx-auto">
+        Har bir murojaat to‘g‘ridan-to‘g‘ri partiya rahbariyati va mas’ul huquqshunoslari tomonidan ko‘rib chiqiladi. Murojaat holatini veb-saytda va Telegram botda kuzatib borishingiz mumkin.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-4 py-10 flex-1 grid grid-cols-1 lg:grid-cols-12 gap-8">
+    
+    <!-- Left: Appeal Form -->
+    <div class="lg:col-span-8 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200">
+      <div class="flex items-center justify-between pb-5 border-b border-slate-100 mb-6">
+        <h2 class="text-lg font-bold text-slate-900 flex items-center">
+          <i class="fas fa-feather-pointed text-red-600 mr-2"></i> Murojaat Shakli
+        </h2>
+        <span class="text-xs text-slate-400"><span class="text-red-600">*</span> Majburiy maydonlar</span>
+      </div>
+
+      <form id="appeal-form" onsubmit="submitAppeal(event)" class="space-y-5">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">
+              F.I.Sh. (To‘liq ism-sharifingiz) <span class="text-red-600">*</span>:
+            </label>
+            <input type="text" id="appeal-name" required placeholder="Masalan: Karimova Dilnoza" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-red-600 focus:outline-none">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">
+              Bog‘lanish telefoni <span class="text-red-600">*</span>:
+            </label>
+            <input type="tel" id="appeal-phone" required placeholder="+998 90 123 45 67" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-red-600 focus:outline-none">
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">
+              Elektron pochta (agar mavjud bo‘lsa):
+            </label>
+            <input type="email" id="appeal-email" placeholder="example@mail.uz" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-red-600 focus:outline-none">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-1">
+              Hudud / Viloyat:
+            </label>
+            <select id="appeal-region" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-red-600 focus:outline-none bg-white">
+              <option value="Toshkent shahri">Toshkent shahri</option>
+              <option value="Toshkent viloyati">Toshkent viloyati</option>
+              <option value="Andijon viloyati">Andijon viloyati</option>
+              <option value="Farg‘ona viloyati">Farg‘ona viloyati</option>
+              <option value="Namangan viloyati">Namangan viloyati</option>
+              <option value="Samarqand viloyati">Samarqand viloyati</option>
+              <option value="Buxoro viloyati">Buxoro viloyati</option>
+              <option value="Qashqadaryo viloyati">Qashqadaryo viloyati</option>
+              <option value="Surxondaryo viloyati">Surxondaryo viloyati</option>
+              <option value="Xorazm viloyati">Xorazm viloyati</option>
+              <option value="Navoiy viloyati">Navoiy viloyati</option>
+              <option value="Jizzax viloyati">Jizzax viloyati</option>
+              <option value="Sirdaryo viloyati">Sirdaryo viloyati</option>
+              <option value="Qoraqalpog‘iston Respublikasi">Qoraqalpog‘iston Respublikasi</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">
+            Yashash manzili (tuman, mahalla, ko‘cha):
+          </label>
+          <input type="text" id="appeal-address" placeholder="Chilonzor tumani, Do‘stlik MFY, 12-uy" class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-red-600 focus:outline-none">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">
+            Murojaat mavzusi / yo‘nalishi <span class="text-red-600">*</span>:
+          </label>
+          <input type="text" id="appeal-subject" required placeholder="Masalan: Mehnat huquqlarining poymol etilishi, Uy-joy masalasi, Moddiy yordam..." class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-red-600 focus:outline-none">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 mb-1">
+            Murojaatning to‘liq matni <span class="text-red-600">*</span>:
+          </label>
+          <textarea id="appeal-message" rows="6" required placeholder="Vaziyatni, qachon va qayerda yuz berganini, qaysi huquqlaringiz buzilganini batafsil yozib qoldiring..." class="w-full px-3.5 py-2.5 border border-slate-300 rounded-xl text-sm focus:ring-2 focus:ring-red-600 focus:outline-none"></textarea>
+        </div>
+
+        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-600 flex items-start space-x-2">
+          <i class="fas fa-shield-halved text-red-600 text-base mt-0.5"></i>
+          <div>
+            <b>Kafolat:</b> Murojaatingiz "Jismoniy va yuridik shaxslarning murojaatlari to‘g‘risida"gi O‘zbekiston Respublikasi Qonuniga muvofiq ko‘rib chiqiladi. Shaxsiy ma’lumotlaringiz qat’iy himoyalanadi.
+          </div>
+        </div>
+
+        <button type="submit" id="submit-btn" class="w-full bg-red-700 hover:bg-red-800 text-white font-bold py-3.5 rounded-xl shadow-md transition flex items-center justify-center text-sm">
+          <i class="fas fa-paper-plane mr-2"></i> Murojaatni Yuborish
+        </button>
+
+      </form>
+
+      <!-- Success Screen Result -->
+      <div id="appeal-success-box" class="hidden text-center py-10 space-y-4">
+        <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-3xl">
+          <i class="fas fa-check"></i>
+        </div>
+        <h3 class="text-2xl font-black text-slate-900">Murojaatingiz qabul qilindi!</h3>
+        <p class="text-sm text-slate-600 max-w-md mx-auto">
+          Murojaat ma’lumotlari partiya markaziy tizimiga va Telegram admin guruhiga yetkazildi.
+        </p>
+        <div class="bg-slate-100 p-4 rounded-xl max-w-xs mx-auto border border-slate-200">
+          <div class="text-xs text-slate-500">Murojaat raqami (ID):</div>
+          <div id="result-appeal-id" class="text-xl font-black text-red-700 tracking-wider">#0000</div>
+        </div>
+        <div class="pt-2 flex justify-center space-x-3">
+          <a href="/cabinet.html" class="bg-red-700 hover:bg-red-800 text-white text-xs font-bold px-4 py-2.5 rounded-lg transition">
+            Shaxsiy kabinetda ko‘rish
+          </a>
+          <button onclick="window.location.reload()" class="bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs font-bold px-4 py-2.5 rounded-lg transition">
+            Yana murojaat yo‘llash
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right: Contact & Instructions -->
+    <div class="lg:col-span-4 space-y-6">
+      
+      <!-- Telegram Bot Card -->
+      <div class="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-6 rounded-2xl shadow-md space-y-4">
+        <div class="flex items-center space-x-3">
+          <div class="w-12 h-12 bg-white text-blue-600 rounded-xl flex items-center justify-center text-2xl shadow">
+            <i class="fab fa-telegram-plane"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-base">Telegram orqali murojaat</h4>
+            <span class="text-xs text-blue-200">@AdolatSD_bot</span>
+          </div>
+        </div>
+        <p class="text-xs text-blue-100 leading-relaxed">
+          Ushbu Telegram bot orqali siz to‘g‘ridan-to‘g‘ri murojaat yo‘llashingiz, savollaringizni qoldirishingiz va partiya javobini xabar tarzida qabul qilishingiz mumkin.
+        </p>
+        <a href="https://t.me/AdolatSD_bot" target="_blank" class="w-full block text-center bg-white text-blue-700 hover:bg-blue-50 font-bold py-2.5 rounded-xl text-xs transition shadow-sm">
+          <i class="fab fa-telegram mr-1.5"></i> Botni ochish (@AdolatSD_bot)
+        </a>
+      </div>
+
+      <!-- Bog'lanish Ma'lumotlari -->
+      <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+        <h4 class="font-bold text-slate-900 text-sm flex items-center border-b pb-3">
+          <i class="fas fa-address-book text-red-600 mr-2"></i> Bog‘lanish Ma’lumotlari
+        </h4>
+        <div class="space-y-3 text-xs text-slate-600">
+          <div>
+            <span class="text-slate-400 block mb-0.5">Rasmiy tashkilot:</span>
+            <b class="text-slate-800">O‘zbekiston "Adolat" SDP Markaziy Kengashi</b>
+          </div>
+          <div>
+            <span class="text-slate-400 block mb-0.5">Ishonch telefoni:</span>
+            <b class="text-slate-800 text-sm text-red-700">+998 (71) 233-12-88</b>
+          </div>
+          <div>
+            <span class="text-slate-400 block mb-0.5">Elektron pochta:</span>
+            <b class="text-slate-800">info@adolat.uz</b>
+          </div>
+          <div>
+            <span class="text-slate-400 block mb-0.5">Pochta manzili:</span>
+            <span class="text-slate-700">100097, Toshkent sh., Chilonzor tumani, Bunyodkor ko‘chasi, 42-uy</span>
+          </div>
+          <div>
+            <span class="text-slate-400 block mb-0.5">Qabul kunlari:</span>
+            <span class="text-slate-700">Har hafta dushanba-juma, 09:00 dan 18:00 gacha</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="bg-slate-950 text-slate-400 text-xs py-8 border-t border-slate-800 mt-auto">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      &copy; 2026 O‘zbekiston "Adolat" sotsial-demokratik partiyasi.
+    </div>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Auto-fill form if user is logged in
+      const user = auth.getUser();
+      if (user) {
+        if (user.fullName) document.getElementById('appeal-name').value = user.fullName;
+        if (user.phone) document.getElementById('appeal-phone').value = user.phone;
+      }
+    });
+
+    async function submitAppeal(e) {
+      e.preventDefault();
+      const user = auth.getUser();
+
+      const payload = {
+        fullName: document.getElementById('appeal-name').value,
+        phone: document.getElementById('appeal-phone').value,
+        email: document.getElementById('appeal-email').value,
+        region: document.getElementById('appeal-region').value,
+        address: document.getElementById('appeal-address').value,
+        subject: document.getElementById('appeal-subject').value,
+        message: document.getElementById('appeal-message').value,
+        userId: user ? user.id : null
+      };
+
+      const btn = document.getElementById('submit-btn');
+      btn.disabled = true;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i> Yuborilmoqda...';
+
+      const res = await apiRequest('/appeals', 'POST', payload);
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i> Murojaatni Yuborish';
+
+      if (res.success) {
+        document.getElementById('appeal-form').classList.add('hidden');
+        document.getElementById('result-appeal-id').innerText = '#' + res.appeal.id;
+        document.getElementById('appeal-success-box').classList.remove('hidden');
+        showToast('Murojaatingiz qabul qilindi va adminga yetkazildi!', 'success');
+      } else {
+        showToast(res.message, 'error');
+      }
+    }
+  </script>
+</body>
+</html>

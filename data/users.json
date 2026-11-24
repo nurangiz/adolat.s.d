@@ -1,0 +1,56 @@
+[
+  {
+    "username": "nur080910",
+    "fullName": "Nurullayeva Nurangiz",
+    "phone": "+955682010",
+    "passwordHash": "$2b$10$yHnVjlT.zTY.Rd/4JuZXDOlZBTMXSE1gp118zhXw/am8VAfxvIrke",
+    "role": "admin",
+    "deviceInfo": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36",
+    "ip": "::1",
+    "id": "mwv2wt19el08c",
+    "createdAt": "2026-11-24T19:19:46.173Z"
+  },
+  {
+    "username": "nur0809",
+    "fullName": "Nurullayeva Nurangiz",
+    "phone": "+955682010",
+    "passwordHash": "$2b$10$U/va2OSDYMxEaucitmoN2uC6CDVfkKESrsh2HA8YNhMDPfoYTRXrC",
+    "role": "citizen",
+    "deviceInfo": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36",
+    "ip": "::1",
+    "id": "mwv2snuy6j4rc",
+    "createdAt": "2026-11-24T19:16:32.842Z"
+  },
+  {
+    "username": "partiya_admin_2",
+    "fullName": "Partiya Yuristi Rustamov",
+    "phone": "",
+    "passwordHash": "$2b$10$tmxYxGD7GUXbAV4MMhpkSOUa5PucBPsnOPjS/miKQKcIkANwqnn2q",
+    "role": "admin",
+    "deviceInfo": "node",
+    "ip": "::1",
+    "id": "mwv2ptxtd2gtm",
+    "createdAt": "2026-11-24T19:14:20.753Z"
+  },
+  {
+    "username": "fuqaro_anvar",
+    "fullName": "Anvar Temirov",
+    "phone": "+998901234567",
+    "passwordHash": "$2b$10$AO8IX4/HDQ6Uj5ZGo4pGc.Onk0OqfM0l9/.gSdgMMORRGFSrRQElO",
+    "role": "citizen",
+    "deviceInfo": "node",
+    "ip": "::1",
+    "id": "mwv2ptv10zd2u",
+    "createdAt": "2026-11-24T19:14:20.653Z"
+  },
+  {
+    "id": "admin-master-1",
+    "username": "admin",
+    "fullName": "Partiya Bosh Administratori",
+    "phone": "+998 71 233 12 88",
+    "role": "admin",
+    "passwordHash": "$2b$10$n54uKLfBNy60zEncMK6KXeb09bpZOfDqx7ujmBFhBsLK6usDdJWKy",
+    "deviceInfo": "Tizim Boshqaruvi",
+    "createdAt": "2026-11-24T19:11:21.890Z"
+  }
+]

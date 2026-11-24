@@ -1,0 +1,24 @@
+{
+  "name": "Adolat SDP - Raqamli Muloqot va Qabulxona",
+  "short_name": "Adolat SDP",
+  "description": "O‘zbekiston Adolat sotsial-demokratik partiyasi rasmiy raqamli portali va fuqarolar qabulxonasi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#B71C1C",
+  "theme_color": "#B71C1C",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

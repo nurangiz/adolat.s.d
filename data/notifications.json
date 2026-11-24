@@ -1,0 +1,83 @@
+[
+  {
+    "type": "NEW_USER",
+    "title": "Yangi foydalanuvchi ro‘yxatdan o‘tdi",
+    "message": "Nurullayeva Nurangiz (Administrator) tizimda ro‘yxatdan o‘tdi.",
+    "userId": "mwv2wt19el08c",
+    "createdAt": "2026-11-24T19:19:46.179Z",
+    "id": "mwv2wt1fezbqn"
+  },
+  {
+    "type": "NEW_QUESTION",
+    "title": "Yangi huquqiy savol tushdi",
+    "message": "Mehnat kodeksi bo‘yicha yangi savol qoldirildi.",
+    "questionId": "mwv2uuloa4kus",
+    "createdAt": "2026-11-24T19:18:14.900Z",
+    "id": "mwv2uulwk69nw"
+  },
+  {
+    "type": "NEW_APPEAL",
+    "title": "Yangi murojaat qabul qilindi",
+    "message": "Nurullayeva Nurangiz tomonidan murojaat: \"asosiy\"",
+    "appealId": "mwv2tj9ykeu5j",
+    "createdAt": "2026-11-24T19:17:13.570Z",
+    "id": "mwv2tjaagduwh"
+  },
+  {
+    "type": "NEW_USER",
+    "title": "Yangi foydalanuvchi ro‘yxatdan o‘tdi",
+    "message": "Nurullayeva Nurangiz (Fuqaro) tizimda ro‘yxatdan o‘tdi.",
+    "userId": "mwv2snuy6j4rc",
+    "createdAt": "2026-11-24T19:16:32.850Z",
+    "id": "mwv2snv6pcbur"
+  },
+  {
+    "type": "NEWS_LIKE",
+    "title": "Yangilikka like bosildi",
+    "message": "Anvar Temirov \"Adolat SDP: Jamiyatda qonun ustuvorligi va ijtimoiy adolat bosh mezondir\" yangiligiga like bosdi.",
+    "newsId": "news-1",
+    "createdAt": "2026-11-24T19:14:20.929Z",
+    "id": "mwv2pu2pdminf"
+  },
+  {
+    "type": "NEW_QUESTION",
+    "title": "Yangi huquqiy savol tushdi",
+    "message": "Mehnat kodeksi bo‘yicha yangi savol qoldirildi.",
+    "questionId": "mwv2pu1t3pqht",
+    "createdAt": "2026-11-24T19:14:20.900Z",
+    "id": "mwv2pu1we0rzf"
+  },
+  {
+    "type": "APPEAL_ANSWERED",
+    "title": "Murojaatingizga rasmiy javob berildi",
+    "message": "\"Mehnat shartnomasi buzilishi\" mavzusidagi murojaatingizga partiya ma’muriyati javob berdi.",
+    "appealId": "mwv2ptybxnnxg",
+    "userId": "mwv2ptv10zd2u",
+    "createdAt": "2026-11-24T19:14:20.883Z",
+    "id": "mwv2pu1f8h7cr"
+  },
+  {
+    "type": "NEW_APPEAL",
+    "title": "Yangi murojaat qabul qilindi",
+    "message": "Anvar Temirov tomonidan murojaat: \"Mehnat shartnomasi buzilishi\"",
+    "appealId": "mwv2ptybxnnxg",
+    "createdAt": "2026-11-24T19:14:20.869Z",
+    "id": "mwv2pu11xtaj5"
+  },
+  {
+    "type": "NEW_USER",
+    "title": "Yangi foydalanuvchi ro‘yxatdan o‘tdi",
+    "message": "Partiya Yuristi Rustamov (Administrator) tizimda ro‘yxatdan o‘tdi.",
+    "userId": "mwv2ptxtd2gtm",
+    "createdAt": "2026-11-24T19:14:20.755Z",
+    "id": "mwv2ptxv48nvi"
+  },
+  {
+    "type": "NEW_USER",
+    "title": "Yangi foydalanuvchi ro‘yxatdan o‘tdi",
+    "message": "Anvar Temirov (Fuqaro) tizimda ro‘yxatdan o‘tdi.",
+    "userId": "mwv2ptv10zd2u",
+    "createdAt": "2026-11-24T19:14:20.655Z",
+    "id": "mwv2ptv3zg3zn"
+  }
+]

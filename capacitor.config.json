@@ -1,0 +1,10 @@
+{
+  "appId": "uz.adolat.raqamliportal",
+  "appName": "Adolat SDP",
+  "webDir": "public",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https",
+    "cleartext": true
+  }
+}
