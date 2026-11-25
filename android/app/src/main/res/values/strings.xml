@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Adolat SDP</string>
+    <string name="title_activity_main">Adolat SDP</string>
+    <string name="package_name">uz.adolat.raqamliportal</string>
+    <string name="custom_url_scheme">uz.adolat.raqamliportal</string>
+</resources>

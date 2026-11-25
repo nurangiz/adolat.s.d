@@ -182,17 +182,13 @@ async function handleTelegramMessage(msg) {
   const text = msg.text ? msg.text.trim() : '';
   const name = [msg.from.first_name, msg.from.last_name].filter(Boolean).join(' ') || msg.from.username || 'Foydalanuvchi';
 
-  // Automatically register any person who texts bot as potential admin or user!
-  // If user enters 080910 or /admin 080910, confirm as admin
-  if (text === config.ADMIN_SECRET_CODE || text === `/admin ${config.ADMIN_SECRET_CODE}` || text === '/admin') {
-    addAdminChatId(chatId);
+  // Admin bo'lish uchun maxfiy kod kiritilishi kerak (kod hech qachon xabarlarda ko'rsatilmaydi)
+  if (text === config.ADMIN_SECRET_CODE || text === `/admin ${config.ADMIN_SECRET_CODE}`) {
+    const added = addAdminChatId(chatId);
+    if (added) {
+      await sendMessage(chatId, `✅ <b>Siz muvaffaqiyatli admin sifatida ro'yxatdan o'tdingiz!</b>\n\nEndi tizimdan barcha fuqaro murojaatlari, savollari va yangilikka like bosilganda sizga xabar keladi.\n\nBot orqali javob berish uchun:\n👉 /javob [murojaat_ID] [javob matni]\n\nMasalan: /javob 1 Hurmatli fuqaro, murojaatingiz ko'rib chiqildi.`);
+    }
     return;
-  }
-
-  // Auto-track admin if they initiate chat or type /start
-  if (!adminChatIds.has(chatId)) {
-    // Add to admin chats automatically so they receive notifications!
-    addAdminChatId(chatId);
   }
 
   // /start

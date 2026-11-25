@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="uz">
 <head>
   <meta charset="UTF-8">
@@ -32,7 +32,7 @@
 
         <div class="flex items-center space-x-4">
           <a href="/" target="_blank" class="text-xs bg-red-800 hover:bg-red-700 text-white px-3 py-1.5 rounded-lg transition flex items-center">
-            <i class="fas fa-globe mr-1.5"></i> Saytni ko‘rish
+            <i class="fas fa-globe mr-1.5"></i> Saytni koâ€˜rish
           </a>
           <div id="admin-user-info" class="text-xs text-red-200 font-semibold"></div>
           <button onclick="logoutAdmin()" class="bg-red-950 hover:bg-black text-red-200 hover:text-white p-2 rounded-lg text-xs transition" title="Chiqish">
@@ -51,7 +51,7 @@
     </div>
     <h2 class="text-xl font-black text-slate-900 mb-2">Admin Kirish Huquqi Talab Etiladi</h2>
     <p class="text-xs text-slate-600 mb-6 leading-relaxed">
-      Ushbu bo‘lim faqat O‘zbekiston "Adolat" SDP partiya administratorlari uchun mo‘ljallangan. Tizimga admin hisobingiz bilan kiring:
+      Ushbu boâ€˜lim faqat Oâ€˜zbekiston "Adolat" SDP partiya administratorlari uchun moâ€˜ljallangan. Tizimga admin hisobingiz bilan kiring:
     </p>
 
     <form onsubmit="handleAdminLogin(event)" class="space-y-4 text-left">
@@ -112,7 +112,7 @@
           <i class="fas fa-users"></i>
         </div>
         <div>
-          <div class="text-xs text-slate-500 font-medium">Ro‘yxatdan o‘tganlar</div>
+          <div class="text-xs text-slate-500 font-medium">Roâ€˜yxatdan oâ€˜tganlar</div>
           <div id="stat-total-users" class="text-2xl font-black text-purple-600">0</div>
         </div>
       </div>
@@ -128,14 +128,14 @@
           </span>
         </div>
         <p class="text-xs text-slate-300">
-          Fuqarolar saytdan ariza yoki savol yo‘llaganda xabar to‘g‘ridan-to‘g‘ri sizning Telegramingizga borishi uchun shaxsiy Telegram ID ingizni ulang.
+          Fuqarolar saytdan ariza yoki savol yoâ€˜llaganda xabar toâ€˜gâ€˜ridan-toâ€˜gâ€˜ri sizning Telegramingizga borishi uchun shaxsiy Telegram ID ingizni ulang.
         </p>
       </div>
 
       <div class="flex items-center space-x-2 w-full md:w-auto">
         <input type="text" id="input-tg-chat-id" placeholder="Shaxsiy Telegram ID (masalan: 12345678)" class="px-3 py-2 bg-slate-800 border border-slate-600 text-white rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-red-500 w-full sm:w-60">
         <button onclick="saveAdminTelegramId()" class="bg-red-700 hover:bg-red-800 text-white font-bold text-xs px-4 py-2 rounded-xl transition whitespace-nowrap">
-          <i class="fas fa-link mr-1"></i> Ulab qo‘yish
+          <i class="fas fa-link mr-1"></i> Ulab qoâ€˜yish
         </button>
       </div>
     </div>
@@ -156,7 +156,7 @@
 
       <button onclick="switchTab('tab-users')" id="btn-tab-users" class="tab-btn pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 transition flex items-center space-x-2">
         <i class="fas fa-address-book"></i>
-        <span>Ro‘yxatdan O‘tganlar</span>
+        <span>Roâ€˜yxatdan Oâ€˜tganlar</span>
       </button>
 
       <button onclick="switchTab('tab-news')" id="btn-tab-news" class="tab-btn pb-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 transition flex items-center space-x-2">
@@ -175,12 +175,12 @@
       <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 pb-4 border-b">
         <div>
           <h3 class="text-base font-bold text-slate-900">Kelib tushgan fuqaro murojaatlari reyestri</h3>
-          <p class="text-xs text-slate-500">Murojaatni o‘rganib, uning tagidagi maydonga rasmiy javob yozing. Javob fuqaroning shaxsiy kabinetiga va botiga yetkaziladi.</p>
+          <p class="text-xs text-slate-500">Murojaatni oâ€˜rganib, uning tagidagi maydonga rasmiy javob yozing. Javob fuqaroning shaxsiy kabinetiga va botiga yetkaziladi.</p>
         </div>
         <select id="filter-appeal-status" onchange="renderAppeals()" class="px-3 py-1.5 border border-slate-300 rounded-lg text-xs font-semibold bg-white">
           <option value="all">Barcha holatlar</option>
-          <option value="new">🔴 Kutilayotgan (yangi)</option>
-          <option value="answered">🟢 Javob berilgan</option>
+          <option value="new">ðŸ”´ Kutilayotgan (yangi)</option>
+          <option value="answered">ðŸŸ¢ Javob berilgan</option>
         </select>
       </div>
 
@@ -192,9 +192,9 @@
     <!-- TAB 2: HUQUQIY SAVOLLARGA JAVOB BERISH (KARD ICHIDA OCHIQ TURADI!) -->
     <div id="tab-questions" class="tab-content bg-white p-6 rounded-b-2xl shadow-sm border border-t-0 border-slate-200 space-y-6 hidden">
       <div>
-        <h3 class="text-base font-bold text-slate-900">Shaffof Huquqiy Q&A Savollari (Kodekslar bo‘yicha)</h3>
+        <h3 class="text-base font-bold text-slate-900">Shaffof Huquqiy Q&A Savollari (Kodekslar boâ€˜yicha)</h3>
         <p class="text-xs text-slate-500">
-          Fuqaro savoli qizil rangda turadi. Har bir savol ostidagi javob yozish qismi <b>ochiq holda turibdi</b>. Xohlasangiz <b>"🤖 AI yuridik xulosasini olish"</b> tugmasini bosib, qonun moddalari bilan tayyorlab, so‘ng <b>"Yashil Javobni E’lon Qilish"</b> tugmasini bosing!
+          Fuqaro savoli qizil rangda turadi. Har bir savol ostidagi javob yozish qismi <b>ochiq holda turibdi</b>. Xohlasangiz <b>"ðŸ¤– AI yuridik xulosasini olish"</b> tugmasini bosib, qonun moddalari bilan tayyorlab, soâ€˜ng <b>"Yashil Javobni Eâ€™lon Qilish"</b> tugmasini bosing!
         </p>
       </div>
 
@@ -206,8 +206,8 @@
     <!-- TAB 3: RO'YXATDAN O'TGANLAR REYESTRI -->
     <div id="tab-users" class="tab-content bg-white p-6 rounded-b-2xl shadow-sm border border-t-0 border-slate-200 space-y-6 hidden">
       <div>
-        <h3 class="text-base font-bold text-slate-900">Tizimda Ro‘yxatdan O‘tgan Barcha Fuqarolar va Adminlar</h3>
-        <p class="text-xs text-slate-500">Sayt yoki bot orqali ro‘yxatdan o‘tgan fuqarolar eslab qolingani, ularning telefonlari va savollari ro‘yxati.</p>
+        <h3 class="text-base font-bold text-slate-900">Tizimda Roâ€˜yxatdan Oâ€˜tgan Barcha Fuqarolar va Adminlar</h3>
+        <p class="text-xs text-slate-500">Sayt yoki bot orqali roâ€˜yxatdan oâ€˜tgan fuqarolar eslab qolingani, ularning telefonlari va savollari roâ€˜yxati.</p>
       </div>
 
       <div class="overflow-x-auto">
@@ -241,7 +241,7 @@
           
           <form onsubmit="handlePostNews(event)" class="space-y-3.5">
             <div>
-              <label class="block text-xs font-bold text-slate-700 mb-1">Mavzu / Yo‘nalish:</label>
+              <label class="block text-xs font-bold text-slate-700 mb-1">Mavzu / Yoâ€˜nalish:</label>
               <input type="text" id="news-category" required placeholder="Masalan: Huquq va Qonunchilik" class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs focus:ring-2 focus:ring-red-600 focus:outline-none">
             </div>
 
@@ -257,17 +257,17 @@
 
             <div>
               <label class="block text-xs font-bold text-slate-700 mb-1">Batafsil matn:</label>
-              <textarea id="news-content" rows="5" required placeholder="Yangilik matnini to‘liq kiriting..." class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs focus:ring-2 focus:ring-red-600 focus:outline-none"></textarea>
+              <textarea id="news-content" rows="5" required placeholder="Yangilik matnini toâ€˜liq kiriting..." class="w-full px-3 py-2 border border-slate-300 rounded-lg text-xs focus:ring-2 focus:ring-red-600 focus:outline-none"></textarea>
             </div>
 
             <button type="submit" class="w-full bg-red-700 hover:bg-red-800 text-white font-bold py-2.5 rounded-xl shadow transition text-xs flex items-center justify-center">
-              <i class="fas fa-paper-plane mr-2"></i> Saytda E’lon Qilish
+              <i class="fas fa-paper-plane mr-2"></i> Saytda Eâ€™lon Qilish
             </button>
           </form>
         </div>
 
         <div class="lg:col-span-7 space-y-4">
-          <h4 class="text-sm font-bold text-slate-900 mb-2">E’lon qilingan maqolalar va ularning ko‘rilishi</h4>
+          <h4 class="text-sm font-bold text-slate-900 mb-2">Eâ€™lon qilingan maqolalar va ularning koâ€˜rilishi</h4>
           <div id="admin-news-list" class="space-y-3"></div>
         </div>
 
@@ -414,16 +414,28 @@
             <div class="flex items-center space-x-2">
               <span class="text-xs text-slate-400">${new Date(a.createdAt).toLocaleString('uz-UZ')}</span>
               <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full ${a.status === 'answered' ? 'bg-emerald-100 text-emerald-800' : 'bg-red-100 text-red-800'}">
-                ${a.status === 'answered' ? '🟢 Javob berilgan' : '🔴 Yangi ariza'}
+                ${a.status === 'answered' ? 'ðŸŸ¢ Javob berilgan' : 'ðŸ”´ Yangi ariza'}
               </span>
             </div>
           </div>
 
           <div class="text-xs space-y-1">
-            <div class="font-bold text-slate-700">Mavzu: <span class="text-slate-900">${a.subject || 'Umumiy'}</span> | Hudud: ${a.region || 'O‘zbekiston'}</div>
+            <div class="font-bold text-slate-700">Mavzu: <span class="text-slate-900">${a.subject || 'Umumiy'}</span> | Hudud: ${a.region || 'Oâ€˜zbekiston'}</div>
             <div class="text-slate-700 bg-white p-3 rounded-xl border border-slate-200 leading-relaxed font-medium">
               ${a.message}
             </div>
+          </div>
+
+          <!-- Admin amallar: status va o'chirish -->
+          <div class="flex flex-wrap gap-2 items-center">
+            <select onchange="updateAppealStatus('${a.id}', this.value)" class="px-2.5 py-1.5 border border-slate-300 rounded-lg text-xs font-semibold bg-white">
+              <option value="new" ${a.status === 'new' ? 'selected' : ''}>ðŸ”´ Yangi</option>
+              <option value="in_progress" ${a.status === 'in_progress' ? 'selected' : ''}>ðŸŸ¡ Ko'rib chiqilmoqda</option>
+              <option value="answered" ${a.status === 'answered' ? 'selected' : ''}>ðŸŸ¢ Javob berilgan</option>
+              <option value="rejected" ${a.status === 'rejected' ? 'selected' : ''}>â›” Rad etildi</option>
+            </select>
+            ${a.telegramChatId ? `<button onclick="sendBotMessageToUser('${a.telegramChatId}')" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition flex items-center"><i class="fab fa-telegram mr-1.5"></i> Bot xabar yuborish</button>` : ''}
+            <button onclick="deleteAppeal('${a.id}')" class="bg-slate-200 hover:bg-red-100 text-red-700 text-xs font-bold px-3 py-1.5 rounded-lg transition flex items-center ml-auto"><i class="fas fa-trash mr-1"></i> O'chirish</button>
           </div>
 
           <!-- Javob berish qismi ochiq holda turadi -->
@@ -441,6 +453,60 @@
           </div>
         </div>
       `).join('');
+    }
+
+    async function updateAppealStatus(id, status) {
+      const res = await apiRequest(`/appeals/${id}/status`, 'POST', { status });
+      if (res.success) {
+        showToast('Murojaat holati yangilandi!', 'success');
+        loadAppeals(); loadStats();
+      } else {
+        showToast(res.message || 'Xatolik yuz berdi.', 'error');
+      }
+    }
+
+    async function deleteAppeal(id) {
+      if (!confirm('Bu murojaatni o\'chirishni tasdiqlaysizmi?')) return;
+      const res = await apiRequest(`/appeals/${id}`, 'DELETE');
+      if (res.success) {
+        showToast('Murojaat o\'chirildi!', 'success');
+        loadAppeals(); loadStats();
+      } else {
+        showToast(res.message || 'O\'chirishda xatolik.', 'error');
+      }
+    }
+
+    async function deleteQuestion(id) {
+      if (!confirm('Bu savolni o\'chirishni tasdiqlaysizmi?')) return;
+      const res = await apiRequest(`/questions/${id}`, 'DELETE');
+      if (res.success) {
+        showToast('Savol o\'chirildi!', 'success');
+        loadQuestions();
+      } else {
+        showToast(res.message || 'Xatolik.', 'error');
+      }
+    }
+
+    async function deleteNews(id) {
+      if (!confirm('Bu yangilikni o\'chirishni tasdiqlaysizmi?')) return;
+      const res = await apiRequest(`/news/${id}`, 'DELETE');
+      if (res.success) {
+        showToast('Yangilik o\'chirildi!', 'success');
+        loadNews();
+      } else {
+        showToast(res.message || 'Xatolik.', 'error');
+      }
+    }
+
+    async function sendBotMessageToUser(chatId) {
+      const msg = prompt('Telegram orqali ushbu fuqaroga yubormoqchi bo\'lgan xabaringizni kiriting:');
+      if (!msg || !msg.trim()) return;
+      const res = await apiRequest('/admin/bot-reply', 'POST', { chatId, message: msg.trim() });
+      if (res.success) {
+        showToast('Xabar Telegram orqali yuborildi!', 'success');
+      } else {
+        showToast(res.message || 'Xabar yuborishda xatolik.', 'error');
+      }
     }
 
     async function submitInlineAppealReply(id) {
@@ -481,7 +547,7 @@
               <div class="flex items-center space-x-2">
                 <span class="text-xs text-slate-500 font-medium">${q.citizenLabel}</span>
                 <span class="text-[10px] px-2 py-0.5 rounded-full font-bold ${q.status === 'answered' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'}">
-                  ${q.status === 'answered' ? '🟢 Yashil javob berilgan' : '⏳ Javob kutilmoqda'}
+                  ${q.status === 'answered' ? 'ðŸŸ¢ Yashil javob berilgan' : 'â³ Javob kutilmoqda'}
                 </span>
               </div>
             </div>
@@ -505,16 +571,18 @@
                 </button>
               </div>
 
-              <textarea id="ans-text-${q.id}" rows="4" class="w-full px-3.5 py-2.5 border border-emerald-300 rounded-xl text-xs font-medium focus:ring-2 focus:ring-emerald-600 focus:outline-none bg-white" placeholder="O‘zbekiston Respublikasi Kodeksining tegishli moddalariga ko‘ra...">${q.answerText || ''}</textarea>
+              <textarea id="ans-text-${q.id}" rows="4" class="w-full px-3.5 py-2.5 border border-emerald-300 rounded-xl text-xs font-medium focus:ring-2 focus:ring-emerald-600 focus:outline-none bg-white" placeholder="Oâ€˜zbekiston Respublikasi Kodeksining tegishli moddalariga koâ€˜ra...">${q.answerText || ''}</textarea>
 
               <div class="flex justify-between items-center pt-1">
                 <span class="text-[11px] text-emerald-700">
                   ${q.answeredAt ? 'Oxirgi javob sanasi: ' + new Date(q.answeredAt).toLocaleString('uz-UZ') : 'Hali javob berilmagan'}
                 </span>
-                <button onclick="submitInlineQuestionAnswer('${q.id}')" class="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition shadow flex items-center">
-                  <i class="fas fa-check-double mr-1.5"></i> Yashil Javobni Saqlash va E’lon Qilish
-                </button>
-              </div>
+                <div class="flex items-center space-x-2">
+                  <button onclick="deleteQuestion(`${q.id}`)" class="bg-slate-200 hover:bg-red-100 text-red-700 text-xs font-bold px-3 py-2 rounded-lg transition flex items-center"><i class="fas fa-trash mr-1"></i> O'chirish</button>
+                  <button onclick="submitInlineQuestionAnswer(`${q.id}`)" class="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition shadow flex items-center">
+                  <i class="fas fa-check-double mr-1.5"></i> Yashil Javobni Saqlash va Eâ€™lon Qilish
+                  </button>
+                </div>
             </div>
 
           </div>
@@ -527,14 +595,14 @@
       const textarea = document.getElementById(`ans-text-${questionId}`);
       if (!textarea) return;
 
-      textarea.value = "🤖 Adolat AI qonun moddalarini tahlil qilmoqda...";
+      textarea.value = "ðŸ¤– Adolat AI qonun moddalarini tahlil qilmoqda...";
       const res = await apiRequest('/ai/draft-answer', 'POST', { questionId });
       if (res.success) {
         // Strip html tags for plain textarea
         const temp = document.createElement('div');
         temp.innerHTML = res.suggestedAnswer;
         textarea.value = temp.innerText || res.suggestedAnswer;
-        showToast('AI huquqiy xulosasi tayyorlandi! Kerak bo‘lsa tahrirlab, yashil javobni e’lon qiling.', 'success');
+        showToast('AI huquqiy xulosasi tayyorlandi! Kerak boâ€˜lsa tahrirlab, yashil javobni eâ€™lon qiling.', 'success');
       } else {
         showToast(res.message, 'error');
       }
@@ -552,7 +620,7 @@
 
       const res = await apiRequest(`/questions/${id}/answer`, 'POST', { answerText });
       if (res.success) {
-        showToast('Yashil javob muvaffaqiyatli saqlandi va saytda e’lon qilindi!', 'success');
+        showToast('Yashil javob muvaffaqiyatli saqlandi va saytda eâ€™lon qilindi!', 'success');
         loadQuestions();
       } else {
         showToast(res.message, 'error');
@@ -567,7 +635,7 @@
         tbody.innerHTML = res.users.map(u => `
           <tr class="hover:bg-slate-50 transition">
             <td class="p-3">
-              <div class="font-bold text-slate-800">${u.fullName || 'Noma’lum'}</div>
+              <div class="font-bold text-slate-800">${u.fullName || 'Nomaâ€™lum'}</div>
               <div class="text-[11px] text-slate-400">@${u.username}</div>
             </td>
             <td class="p-3">
@@ -575,7 +643,7 @@
                 ${u.role === 'admin' ? 'Administrator' : 'Fuqaro'}
               </span>
             </td>
-            <td class="p-3 font-medium text-slate-700">${u.phone || '—'}</td>
+            <td class="p-3 font-medium text-slate-700">${u.phone || 'â€”'}</td>
             <td class="p-3 font-bold text-slate-900">${u.appealsCount} ta</td>
             <td class="p-3 font-bold text-red-700">${u.questionsCount} ta</td>
             <td class="p-3 text-[11px] text-slate-500 max-w-xs truncate" title="${u.deviceInfo}">
@@ -599,9 +667,13 @@
               <h5 class="text-xs font-bold text-slate-800 mt-1">${n.title}</h5>
               <span class="text-[10px] text-slate-400">${n.date}</span>
             </div>
-            <div class="flex items-center space-x-2 text-xs font-bold text-red-600 bg-red-50 px-3 py-1.5 rounded-lg">
+            <div class="flex items-center space-x-3">
+              <div class="flex items-center space-x-2 text-xs font-bold text-red-600 bg-red-50 px-3 py-1.5 rounded-lg">
               <i class="fas fa-heart"></i>
               <span>${n.likesCount || 0} Like</span>
+            </div>
+              </div>
+              <button onclick="deleteNews(`${n.id}`)" class="bg-slate-200 hover:bg-red-100 text-red-700 text-xs font-bold px-3 py-1.5 rounded-lg transition flex items-center"><i class='fas fa-trash mr-1'></i> O'chirish</button>
             </div>
           </div>
         `).join('');
@@ -619,7 +691,7 @@
 
       const res = await apiRequest('/news', 'POST', payload);
       if (res.success) {
-        showToast('Yangilik saytda e’lon qilindi!', 'success');
+        showToast('Yangilik saytda eâ€™lon qilindi!', 'success');
         document.getElementById('news-title').value = '';
         document.getElementById('news-content').value = '';
         loadNews();
@@ -671,3 +743,4 @@
   </script>
 </body>
 </html>
+

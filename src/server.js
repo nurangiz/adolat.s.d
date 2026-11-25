@@ -346,6 +346,84 @@ app.post('/api/appeals/:id/reply', requireAdmin, async (req, res) => {
   }
 });
 
+// Update Appeal Status (Admin)
+app.post('/api/appeals/:id/status', requireAdmin, (req, res) => {
+  try {
+    const { id } = req.params;
+    const { status } = req.body;
+    const validStatuses = ['new', 'in_progress', 'answered', 'rejected'];
+    if (!validStatuses.includes(status)) {
+      return res.status(400).json({ success: false, message: 'Noto\'g\'ri holat!' });
+    }
+    const appeal = appealsStore.findById(id);
+    if (!appeal) return res.status(404).json({ success: false, message: 'Murojaat topilmadi!' });
+    const updated = appealsStore.update(id, { status });
+    broadcastEvent({ type: 'APPEAL_STATUS_UPDATED', appeal: updated });
+    res.json({ success: true, message: 'Murojaat holati yangilandi!', appeal: updated });
+  } catch (err) {
+    res.status(500).json({ success: false, message: 'Xatolik yuz berdi.' });
+  }
+});
+
+// Delete Appeal (Admin)
+app.delete('/api/appeals/:id', requireAdmin, (req, res) => {
+  try {
+    const { id } = req.params;
+    const appeal = appealsStore.findById(id);
+    if (!appeal) return res.status(404).json({ success: false, message: 'Murojaat topilmadi!' });
+    appealsStore.delete(id);
+    broadcastEvent({ type: 'APPEAL_DELETED', id });
+    res.json({ success: true, message: 'Murojaat o\'chirildi!' });
+  } catch (err) {
+    res.status(500).json({ success: false, message: 'O\'chirishda xatolik yuz berdi.' });
+  }
+});
+
+// Delete Question (Admin)
+app.delete('/api/questions/:id', requireAdmin, (req, res) => {
+  try {
+    const { id } = req.params;
+    const q = questionsStore.findById(id);
+    if (!q) return res.status(404).json({ success: false, message: 'Savol topilmadi!' });
+    questionsStore.delete(id);
+    broadcastEvent({ type: 'QUESTION_DELETED', id });
+    res.json({ success: true, message: 'Savol o\'chirildi!' });
+  } catch (err) {
+    res.status(500).json({ success: false, message: 'O\'chirishda xatolik yuz berdi.' });
+  }
+});
+
+// Delete News (Admin)
+app.delete('/api/news/:id', requireAdmin, (req, res) => {
+  try {
+    const { id } = req.params;
+    const n = newsStore.findById(id);
+    if (!n) return res.status(404).json({ success: false, message: 'Yangilik topilmadi!' });
+    newsStore.delete(id);
+    broadcastEvent({ type: 'NEWS_DELETED', id });
+    res.json({ success: true, message: 'Yangilik o\'chirildi!' });
+  } catch (err) {
+    res.status(500).json({ success: false, message: 'O\'chirishda xatolik yuz berdi.' });
+  }
+});
+
+// Admin send message to citizen via Telegram bot
+app.post('/api/admin/bot-reply', requireAdmin, async (req, res) => {
+  try {
+    const { chatId, message } = req.body;
+    if (!chatId || !message) {
+      return res.status(400).json({ success: false, message: 'Chat ID va xabar matni kiritilishi shart!' });
+    }
+    const { sendReplyToCitizenTelegram } = require('./bot');
+    const fakeAppeal = { id: 'admin', subject: 'Muloqot', fullName: 'Fuqaro' };
+    await sendReplyToCitizenTelegram(chatId, fakeAppeal, message);
+    res.json({ success: true, message: `Xabar Telegram orqali yuborildi!` });
+  } catch (err) {
+    console.error('Bot reply error:', err);
+    res.status(500).json({ success: false, message: 'Xabar yuborishda xatolik yuz berdi.' });
+  }
+});
+
 // ----------------- ADOLAT YURIDIK AI KONSULTATSIYASI ----------------- //
 
 // AI ga har qanday huquqiy savol berish
